@@ -34,7 +34,7 @@ def group_root(udid):
     out = subprocess.run(["xcrun", "simctl", "get_app_container", udid, "com.pivi.dictus", "groups"],
                          capture_output=True, text=True, check=True).stdout
     for line in out.splitlines():
-        if line.startswith("group.solutions.pivi.dictus"):
+        if line.startswith("group.mn.gansaikhan.dictus"):
             return os.path.join(line.split("\t", 1)[1], "VoiceNotes", "KeyboardDelivery")
     raise SystemExit("App Group not found: install and launch Dictus first")
 

@@ -80,7 +80,7 @@ No new dependencies required. Everything runs on iOS frameworks already in use:
 |---------|---------|---------|--------------|
 | UIKit `UITextDocumentProxy` | iOS 17+ | The only Apple-sanctioned text-field proxy inside a keyboard extension | Only surface Apple exposes for writing into the host app from an extension |
 | UIKit `UIInputViewController` | iOS 17+ | `hasFullAccess`, `hasText`, `textDocumentProxy` properties | Canonical keyboard-extension host class |
-| Foundation `UserDefaults(suiteName:)` | iOS 17+ | App Group cross-process store (`group.solutions.pivi.dictus`) | Already the app/keyboard transport; no change needed |
+| Foundation `UserDefaults(suiteName:)` | iOS 17+ | App Group cross-process store (`group.mn.gansaikhan.dictus`) | Already the app/keyboard transport; no change needed |
 | `DictusCore.PersistentLog` + `LogEvent` | In-repo | Privacy-safe structured logging into App Group file | Existing pipeline consumed by log-dump UX; add cases, don't fork |
 | `DictusCore.HapticFeedback` | In-repo | Centralized `UINotificationFeedbackGenerator` + impact generators | Already has `textInserted` success idiom; add an error-haptic wrapper |
 | `ActivityKit` `Activity<DictusLiveActivityAttributes>` | iOS 17+ | Dynamic Island phase updates | Already wired in `LiveActivityManager`; extend the existing `.failed` phase or add a short variant |

@@ -102,7 +102,7 @@ threw away a whole measurement pass after finding it had run with thinking
 silently on. `AneBenchRunner.tokens(for:tokenizer:)` appends that block.
 
 **No App Group.** #268 asked for the results to come out through the persistent
-log, and this bundle id cannot be signed with `group.solutions.pivi.dictus` on
+log, and this bundle id cannot be signed with `group.mn.gansaikhan.dictus` on
 this machine — see the comment in `project.yml`. The write is attempted and its
 outcome reported; what actually carries the numbers is the app's own Documents
 directory.

@@ -64,7 +64,7 @@ json.dump(vocabulary, open(f"{group}/vocabulary.json", "w"), ensure_ascii=False)
 json.dump(history, open(f"{group}/transcription_history.json", "w"), ensure_ascii=False)
 PY
   xcrun simctl spawn "$UDID" defaults delete \
-    "$GROUP_DIR/Library/Preferences/group.solutions.pivi.dictus.plist" dictus.vocabularySuggestionsIgnored 2>/dev/null || true
+    "$GROUP_DIR/Library/Preferences/group.mn.gansaikhan.dictus.plist" dictus.vocabularySuggestionsIgnored 2>/dev/null || true
   $D relaunch -AppleLanguages '(fr)' -AppleLocale fr_FR   # French UI on any device
 }
 open_vocabulary() {
@@ -166,7 +166,7 @@ $D tap-id vocabulary.pair.1.ignore
 $D gone-id vocabulary.pair.1.accept
 ignored=no                                            # the defaults flush takes a moment
 for _ in 1 2 3 4 5 6 7 8 9 10; do
-  xcrun simctl spawn "$UDID" defaults read "$GROUP_DIR/Library/Preferences/group.solutions.pivi.dictus.plist" \
+  xcrun simctl spawn "$UDID" defaults read "$GROUP_DIR/Library/Preferences/group.mn.gansaikhan.dictus.plist" \
     dictus.vocabularySuggestionsIgnored 2>/dev/null | grep -q 'pair:claude code|cloud code' && { ignored=yes; break; }
   sleep 1
 done

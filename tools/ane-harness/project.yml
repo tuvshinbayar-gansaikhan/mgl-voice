@@ -42,12 +42,12 @@ targets:
     # at the authored files instead.
     #
     # No entitlements file at all, and #268 asked for one. The harness was first
-    # built with `group.solutions.pivi.dictus` so its results would come out
+    # built with `group.mn.gansaikhan.dictus` so its results would come out
     # through DictusApp's persistent-log export, the way D1's did. Signing
     # refuses it:
     #
     #   error: Provisioning profile "iOS Team Provisioning Profile: *" doesn't
-    #   support the group.solutions.pivi.dictus App Group.
+    #   support the group.mn.gansaikhan.dictus App Group.
     #   error: No Accounts: Add a new account in Accounts settings.
     #
     # The three profiles on this machine that carry that group are bound to

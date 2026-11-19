@@ -186,7 +186,7 @@ xcrun simctl get_app_container <udid> com.pivi.dictus groups
 ```
 
 ```
-group.solutions.pivi.dictus	/Users/…/Devices/<udid>/data/Containers/Shared/AppGroup/3B7549C4-…
+group.mn.gansaikhan.dictus	/Users/…/Devices/<udid>/data/Containers/Shared/AppGroup/3B7549C4-…
 ```
 
 `dictus_debug.log` sits at the root of that directory.

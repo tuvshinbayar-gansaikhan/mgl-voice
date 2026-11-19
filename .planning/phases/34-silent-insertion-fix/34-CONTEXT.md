@@ -79,7 +79,7 @@ Out of scope: Any redesign of the Darwin notification trigger, the App Group tra
 
 ### Architecture context
 - `.planning/PROJECT.md` Key Decisions — two-process architecture (keyboard ↔ app via App Group)
-- `CLAUDE.md` — 50MB keyboard memory ceiling, App Group (`group.solutions.pivi.dictus`), no `UIApplication.shared` in extension
+- `CLAUDE.md` — 50MB keyboard memory ceiling, App Group (`group.mn.gansaikhan.dictus`), no `UIApplication.shared` in extension
 - Memory: `project_fix03_cold_start_diagnosis.md` — controller recreation during swipe-back (cold start Audio Bridge context)
 
 </canonical_refs>

@@ -21,8 +21,8 @@
 set -euo pipefail
 UDID="$1"
 DUR="${2:-14}"
-GROUP=$(xcrun simctl get_app_container "$UDID" com.pivi.dictus groups | awk -F'\t' '/group.solutions.pivi.dictus/{print $2}')
-PL="$GROUP/Library/Preferences/group.solutions.pivi.dictus"
+GROUP=$(xcrun simctl get_app_container "$UDID" com.pivi.dictus groups | awk -F'\t' '/group.mn.gansaikhan.dictus/{print $2}')
+PL="$GROUP/Library/Preferences/group.mn.gansaikhan.dictus"
 w() { xcrun simctl spawn "$UDID" defaults write "$PL" "$@"; }
 now() { python3 -c "import time; print(time.time())"; }
 post() { xcrun simctl spawn "$UDID" notifyutil -p "$1"; }

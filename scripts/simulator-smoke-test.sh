@@ -59,7 +59,7 @@ esac
 
 APP_ID=com.pivi.dictus
 KEYBOARD_ID=com.pivi.dictus.keyboard
-APP_GROUP=group.solutions.pivi.dictus
+APP_GROUP=group.mn.gansaikhan.dictus
 DERIVED_DATA=build/DerivedData
 APP_PATH="$DERIVED_DATA/Build/Products/Debug-iphonesimulator/DictusApp.app"
 

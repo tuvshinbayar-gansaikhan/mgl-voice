@@ -108,7 +108,7 @@ Shipped v1.4 with ~21K LOC Swift + 1.7K C++ + 1.3K Python across 5 milestones in
 Tech stack: Swift 5.9+ / SwiftUI / WhisperKit 0.16.0+ / FluidAudio (Parakeet) via SPM / C++ AOSP trie + N-gram engine (ObjC++ bridge).
 Architecture: Two-process (keyboard extension + main app via Darwin notifications + URL scheme + Audio Bridge for cold start).
 Keyboard: giellakbd-ios UICollectionView with DictusKeyboardBridge delegate adapter.
-App Group: `group.solutions.pivi.dictus`.
+App Group: `group.mn.gansaikhan.dictus`.
 Minimum target: iOS 17.0.
 Keyboard extension memory limit: ~50MB (verified on device).
 Distribution: Public TestFlight beta (v1.4 build 6), Apple Developer Team 9B8B36C2FA.
@@ -123,7 +123,7 @@ Known remaining issues:
 - **Memory**: Keyboard extensions limited to ~50MB RAM
 - **Permissions**: Microphone in keyboard requires Full Access enabled
 - **Extension limitations**: No `UIApplication.shared` in keyboard extensions
-- **Data sharing**: All shared data via App Group (`group.solutions.pivi.dictus`)
+- **Data sharing**: All shared data via App Group (`group.mn.gansaikhan.dictus`)
 - **Minimum target**: iOS 17.0, iPhone 12+ (A14 Bionic) recommended
 - **Stack**: Swift 5.9+ / SwiftUI / WhisperKit + FluidAudio via SPM
 - **License**: MIT — fully open source
@@ -148,7 +148,7 @@ Known remaining issues:
 | Auto-return REJECTED | All 5 approaches fail, no public iOS API for keyboard host detection | ✓ Good — documented in ADR |
 | BUG-71/72 revert | CallStateMonitor caused cold start regressions and post-call crashes | ⚠️ Revisit — need different approach in v1.5 |
 | Public TestFlight beta | Keyboard rework complete, ready for public exposure | ✓ Good — public beta live in v1.3 |
-| App Group migration to group.solutions.pivi.dictus | Old ID claimed by personal team, professional team needed new ID | ✓ Good — clean separation |
+| App Group migration to group.mn.gansaikhan.dictus | Old ID claimed by personal team, professional team needed new ID | ✓ Good — clean separation |
 
 ---
 *Last updated: 2026-04-15 after v1.7 milestone start*

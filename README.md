@@ -129,7 +129,7 @@ Dictus is organized into three Xcode targets:
 | **DictusKeyboard** | Keyboard extension — custom keyboard + dictation trigger |
 | **DictusCore** | Shared framework — App Group storage, models, preferences |
 
-The app and the keyboard extension communicate through an **App Group** (`group.solutions.pivi.dictus`). WhisperKit runs inside DictusApp (the keyboard extension has a ~50 MB memory limit), and an audio bridge handles cold start so dictation works seamlessly from the keyboard.
+The app and the keyboard extension communicate through an **App Group** (`group.mn.gansaikhan.dictus`). WhisperKit runs inside DictusApp (the keyboard extension has a ~50 MB memory limit), and an audio bridge handles cold start so dictation works seamlessly from the keyboard.
 
 ## Contributing
 

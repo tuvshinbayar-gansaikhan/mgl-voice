@@ -38,7 +38,7 @@ Dictus is built with **Swift 5.9+** and **SwiftUI**.
 
 - **DictusKeyboard** has a ~50 MB memory limit. Only tiny, base, and small models run in the extension.
 - **No `UIApplication.shared`** in the keyboard extension -- iOS does not allow it.
-- All shared data goes through the **App Group** (`group.solutions.pivi.dictus`).
+- All shared data goes through the **App Group** (`group.mn.gansaikhan.dictus`).
 
 ## Running Tests
 

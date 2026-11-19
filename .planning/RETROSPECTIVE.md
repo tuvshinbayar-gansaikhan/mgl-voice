@@ -129,7 +129,7 @@
 - **UIViewRepresentable for keyboard touch → reverted**: Full UIKit touch handler implementation was reverted due to edge clipping — DragGesture with contentShape was simpler and sufficient. Prototype first.
 - **Dead zone investigation (Phase 15.4)**: Extensive research into AOSP/Apple/Fleksy keyboard architectures revealed the problem is architectural (SwiftUI vs UIKit), not solvable with patches. Should have recognized this earlier.
 - **Requirements tracking drift**: Several requirements (LOG-01/02/04, TF-03/04, ANIM-03) weren't updated as work completed. Traceability table became stale.
-- **Multiple App Group migrations**: Changed from group.com.pivi.dictus to group.solutions.pivi.dictus during TestFlight prep — would have been caught earlier with a signing dry-run
+- **Multiple App Group migrations**: Changed from group.com.pivi.dictus to group.mn.gansaikhan.dictus during TestFlight prep — would have been caught earlier with a signing dry-run
 
 ### Patterns Established
 - `renderTick` @State counter to force Canvas re-evaluation after extension suspension

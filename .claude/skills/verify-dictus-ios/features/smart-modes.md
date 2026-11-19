@@ -54,7 +54,7 @@ The French text is inserted as dictated and the status slot reads « → EN : Ap
 **Home ring** (`smart-modes.home-ring`, run on 2026-11-05 at `15cff286`; nothing records). The ring needs the mic, so a model; a model can be faked for the mic alone with `dictus.downloadedModels` and `dictus.activeModel` in the App Group, with the app stopped. A release on a mode would then start a dictation on a model that is not on disk, so revoke the microphone first. Without `dictus.debugAppleIntelligenceForced` every mode sector is greyed.
 
 ```bash
-U=<udid>; source "$DICTUS_VERIFY_RUN/run.env"; P="$GROUP_DIR/Library/Preferences/group.solutions.pivi.dictus.plist"
+U=<udid>; source "$DICTUS_VERIFY_RUN/run.env"; P="$GROUP_DIR/Library/Preferences/group.mn.gansaikhan.dictus.plist"
 xcrun simctl privacy $U revoke microphone com.pivi.dictus
 xcrun simctl terminate $U com.pivi.dictus
 xcrun simctl spawn $U defaults write "$P" dictus.downloadedModels -data "$(printf '["openai_whisper-base"]' | xxd -p | tr -d '\n')"

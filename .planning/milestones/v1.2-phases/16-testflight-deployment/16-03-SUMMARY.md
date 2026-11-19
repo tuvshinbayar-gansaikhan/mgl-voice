@@ -20,7 +20,7 @@ Archive the app, upload to App Store Connect, distribute via TestFlight.
 ## Key decisions
 
 - **Private beta only** (no public TestFlight link) — Pierre wants to rework the keyboard before going public
-- **App Group migrated** from `group.com.pivi.dictus` to `group.solutions.pivi.dictus` (old ID taken by personal team)
+- **App Group migrated** from `group.com.pivi.dictus` to `group.mn.gansaikhan.dictus` (old ID taken by personal team)
 - **App icons alpha channel removed** — App Store Connect rejects icons with transparency
 - **CFBundleDisplayName added** to DictusWidgets Info.plist (required by App Store Connect)
 - **No encryption compliance** — Dictus uses no custom encryption (ML only)

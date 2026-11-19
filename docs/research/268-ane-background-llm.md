@@ -658,7 +658,7 @@ results come out the way D1's did". Signing refuses it:
 
 ```text
 error: Provisioning profile "iOS Team Provisioning Profile: *" doesn't support
-the group.solutions.pivi.dictus App Group.
+the group.mn.gansaikhan.dictus App Group.
 error: No Accounts: Add a new account in Accounts settings.
 ```
 
