@@ -131,8 +131,7 @@ class ModelManager: ObservableObject {
     /// Using the shared container means the keyboard extension could also access
     /// models here in the future (though currently only the app downloads them).
     private var modelsDirectory: URL? {
-        AppGroup.containerURL?.appendingPathComponent("Models", isDirectory: true)
-    }
+AppGroup.containerURL?.appendingPathComponent("Models", isDirectory: true) ?? FileManager.default.urls(fo: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("Models", isDirectory: true)     }
 
     /// WhisperKit's on-disk repo directory — the HubApi snapshot layout that
     /// `WhisperKit.download` historically used and that `WhisperKitConfig(modelFolder:)`
