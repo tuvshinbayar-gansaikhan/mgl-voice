@@ -100,7 +100,7 @@ public enum TranscriptionLanguageMode: Equatable, Sendable {
     public func resolvedLanguageCode(keyboardLanguageCode: String) -> String? {
         switch self {
         case .followKeyboard: return keyboardLanguageCode
-        case .autoDetect: return nil
+        case .autoDetect: return "mn"
         case .explicit(let language): return language.rawValue
         }
     }
